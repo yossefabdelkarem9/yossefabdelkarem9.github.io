@@ -3,8 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Youssef Ahmed | Data Engineer</title>
+  <title>Yossef Ahmed | Junior Data Engineer</title>
   
+  <!-- SEO -->
+  <meta name="description" content="Yossef Ahmed – Junior Data Engineer skilled in SQL, Python, Spark, Azure, ETL Pipelines, Data Warehousing & Machine Learning.">
+  <meta name="keywords" content="Data Engineer, SQL, Python, Spark, Kafka, Azure, Machine Learning, Portfolio">
+  <meta name="author" content="Yossef Ahmed">
+
+  <!-- OpenGraph for nicer link previews -->
+  <meta property="og:title" content="Yossef Ahmed | Junior Data Engineer" />
+  <meta property="og:description" content="Junior Data Engineer focused on ETL pipelines, big data processing, cloud solutions, and ML-assisted analytics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="imgs/og-image.png" />
+  <meta property="og:url" content="https://your-domain.com" />
+
+  <!-- Favicon (replace with your file) -->
+  <link rel="icon" href="imgs/favicon.ico" />
+
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -17,6 +32,12 @@
   <style>
     /* Poppins is the primary font */
     body { font-family: 'Poppins', sans-serif; }
+    /* small utility for skill boxes */
+    .skill-box { padding: 10px 18px; border-radius: 9999px; background: #2196F3; color: white; font-weight: 600; display: inline-block; }
+    /* subtle heading glow for hero name */
+    .hero-name { text-shadow: 0 0 18px rgba(59,130,246,0.18); }
+    /* ensure images are responsive */
+    img { max-width: 100%; height: auto; }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800 dark:bg-black dark:text-gray-200 transition-colors duration-500">
@@ -30,37 +51,46 @@
                 <li><a href="#about" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-all duration-300">About</a></li>
                 <li><a href="#education" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-all duration-300">Education</a></li>
                 <li><a href="#training" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-all duration-300">Training & Certs</a></li>
-                <li><a href="#services" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-all duration-300">Services</a></li>
+                <li><a href="#experience" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-all duration-300">Experience</a></li>
+                <li><a href="#skills" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-all duration-300">Skills</a></li>
                 <li><a href="#projects" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-all duration-300">Projects</a></li>
                 <li><a href="#contact" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-all duration-300">Contact</a></li>
             </ul>
         </div>
         
         <div class="flex items-center gap-4">
-            <button id="theme-toggle" class="text-xl hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">
-                <i id="theme-icon" class="fas fa-sun"></i>
+            <button id="theme-toggle" class="text-xl hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors" aria-label="Toggle dark mode">
+                <i id="theme-icon" class="fas"></i>
             </button>
             
-            <button id="hamburger-button" class="md:hidden text-xl hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">
+            <button id="hamburger-button" class="md:hidden text-xl hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors" aria-label="Toggle menu">
                 <i id="hamburger-icon" class="fas fa-bars"></i>
             </button>
         </div>
     </nav>
-</header>
-  
+  </header>
+    
   <main>
 <section id="home" class="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-blue-900 to-blue-400 text-white px-6 pt-24">
       <div class="flex-1 text-center md:text-left" data-aos="fade-right">
-        <h1 class="text-5xl md:text-6xl font-bold">Yossef Abd Elkarem</h1>
+        <h1 class="text-5xl md:text-6xl font-bold hero-name">Yossef Abd Elkarem</h1>
         <div class="w-20 h-1 bg-[#FFC107] my-4 mx-auto md:mx-0"></div>
-        <p class="text-xl mb-4">Data Engineer</p>
-        <p class="max-w-lg mb-6">A passionate Data Engineering student specializing in building Data Pipelines, Big Data systems, and Cloud-based solutions.</p>
+        <p class="text-xl mb-4">Junior Data Engineer | Data Pipelines, Cloud & ML</p>
+        <p class="max-w-lg mb-6">A passionate Data Engineering student specializing in building scalable ETL pipelines, big data systems, and cloud-based solutions. Currently enhancing ML skills through an intensive NTI program.</p>
 
         <div class="flex justify-center md:justify-start gap-6 text-2xl">
             <a href="mailto:yossefabdelkarem9@gmail.com" class="hover:text-[#FFC107] transition-all duration-300"><i class="fas fa-envelope"></i></a>
             <a href="https://github.com/yossefabdelkarem9" target="_blank" class="hover:text-[#FFC107] transition-all duration-300"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/yossefabdelkarem/" target="_blank" class="hover:text-[#FFC107] transition-all duration-300"><i class="fab fa-linkedin"></i></a>
         </div>
+
+        <div class="mt-6 flex gap-4 justify-center md:justify-start">
+          <a href="cv/Youssef_Ahmed_CV.pdf" download class="bg-[#4CAF50] text-white px-6 py-2 rounded-full font-semibold transition hover:scale-105 inline-block">Download CV</a>
+          <a href="#contact" class="bg-[#FFC107] text-black px-6 py-2 rounded-full font-semibold hover:opacity-90 transition-transform hover:scale-105 inline-block">Hire Me</a>
+        </div>
+
+        <p class="mt-4 text-sm opacity-90"><i class="fas fa-location-dot"></i> Assiut, Egypt</p>
+
         </div>
         <div class="flex-1 flex justify-center mt-10 md:mt-0" data-aos="zoom-in">
         <div class="relative w-[20rem] h-[20rem] flex items-center justify-center">
@@ -79,7 +109,7 @@
     </div>
     <div class="flex-1" data-aos="fade-left">
         <h2 class="text-4xl font-bold text-[#2196F3] dark:text-[#38bdf8] mb-6 text-center md:text-left">About Me</h2>
-        <p class="mb-4">I am Yossef Ahmed Abd Elkarem, a third-year Computer Science student at Assiut University. I have a deep passion for Data Engineering, data analysis, and cloud systems.</p>
+        <p class="mb-4">I am Yossef Ahmed Abd Elkarem, a third-year Computer Science student at Assiut University specializing in Data Engineering and Analytics.</p>
         <p class="mb-6">Throughout my academic and training journey, I've invested my time in gaining practical experience in system building, data analysis, pipeline design, and working with modern tools used in the industry.</p>
         
         <div class="flex flex-wrap gap-3 justify-center md:justify-start">
@@ -98,24 +128,6 @@
             <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
                 <i class="devicon-hadoop-plain colored text-xl"></i> Hadoop
             </span>
-            <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
-                <i class="devicon-azure-plain colored text-xl"></i> Azure
-            </span>
-            <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
-                <i class="devicon-pandas-original colored text-xl"></i> Pandas
-            </span>
-            <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
-                Airflow
-            </span>
-             <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
-                Power BI
-            </span>
-             <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
-                <i class="devicon-cplusplus-plain colored text-xl"></i> C++
-            </span>
-            <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
-                Data Structures
-            </span>
         </div>
     </div>
  </section>
@@ -132,55 +144,134 @@
     </div>
   </section>
   
+  <!-- Training & Certifications (final HR-ready) -->
   <section class="py-10 px-6" id="training">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-12 text-[#2196F3]">Training & Certifications</h2>
+      <h2 class="text-4xl font-bold text-center mb-12 text-[#2196F3]">Training, Internships & Certifications</h2>
+
       <div class="space-y-6 text-center">
+
+        <!-- DEPI -->
         <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up">
-          <h3 class="text-xl font-semibold">Data Engineering Traineeship – DEPI</h3>
-          <p class="text-gray-600 dark:text-gray-400">Digital Egypt Pioneers Initiative (Python, SQL, Spark, Airflow, Azure, Kafka, ETL/ELT)</p>
+          <i class="fas fa-database text-3xl text-[#4CAF50] mb-3"></i>
+          <h3 class="text-xl font-semibold">Data Engineering Trainee — DEPI</h3>
+          <p class="text-gray-600 dark:text-gray-400">Digital Egypt Pioneers Initiative (2024 – 2025)</p>
+          <p class="text-gray-500 text-sm mt-2">Hands-on training on production-ready ETL/ELT pipelines, data warehousing, Azure cloud services, Spark processing, and real-time streaming with Kafka.</p>
         </div>
-        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-semibold">Huawei Big Data Associate – NTI</h3>
-          <p class="text-gray-600 dark:text-gray-400">80-hour offline training (Hadoop, HDFS, MapReduce, Spark, Flink, Kafka, Hive, HBase)</p>
+
+        <!-- ML NTI -->
+        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up" data-aos-delay="150">
+          <i class="fas fa-robot text-3xl text-[#6366F1] mb-3"></i>
+          <h3 class="text-xl font-semibold">Machine Learning for Data Analysis — NTI</h3>
+          <p class="text-gray-600 dark:text-gray-400">National Telecommunication Institute (Internship) — Nov 2025 to Present</p>
+          <p class="text-gray-500 text-sm mt-2">Intensive 120-hour program covering Data Preprocessing, EDA, Machine Learning algorithms, model evaluation, and TensorFlow-based implementations with real datasets.</p>
         </div>
-        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up" data-aos-delay="400">
-          <h3 class="text-xl font-semibold">Huawei Certified ICT Associate – Big Data (HCIA-Big Data)</h3>
-          <p class="text-gray-600 dark:text-gray-400">Huawei certification in distributed big data systems.</p>
+
+        <!-- Huawei Big Data -->
+        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-network-wired text-3xl text-[#2196F3] mb-3"></i>
+          <h3 class="text-xl font-semibold">Huawei Big Data Associate — NTI</h3>
+          <p class="text-gray-600 dark:text-gray-400">80-hour Advanced Training in Enterprise Big Data Systems</p>
+          <p class="text-gray-500 text-sm mt-2">Training on distributed systems including Hadoop, Spark, Kafka, Hive, HBase, and Flink.</p>
         </div>
-         <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up" data-aos-delay="500">
-          <h3 class="text-xl font-semibold">Associate Data Engineer in SQL – DataCamp</h3>
-          <p class="text-gray-600 dark:text-gray-400">Complete SQL track (Window Functions, Data Modeling, ETL/ELT, Snowflake)</p>
+
+        <!-- HCIA -->
+        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up" data-aos-delay="450">
+          <i class="fas fa-certificate text-3xl text-[#facc15] mb-3"></i>
+          <h3 class="text-xl font-semibold">Huawei Certified ICT Associate (HCIA) — Big Data</h3>
+          <p class="text-gray-600 dark:text-gray-400">Official Huawei Certification</p>
+          <p class="text-gray-500 text-sm mt-2">Validated expertise in enterprise-grade big data infrastructure, data storage, and processing.</p>
         </div>
+
+        <!-- DataCamp -->
+        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up" data-aos-delay="600">
+          <i class="fas fa-code text-3xl text-[#22c55e] mb-3"></i>
+          <h3 class="text-xl font-semibold">Associate Data Engineer in SQL — DataCamp</h3>
+          <p class="text-gray-600 dark:text-gray-400">International Certification in SQL & Data Engineering</p>
+          <p class="text-gray-500 text-sm mt-2">Advanced SQL, Data Modeling, Window Functions, ETL, and Snowflake warehousing.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-    <section id="services" class="bg-gray-100 dark:bg-black py-20 transition-colors duration-500">
-      <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-[#2196F3] dark:text-[#38bdf8] mb-12 text-center" data-aos="fade-up">What I Offer</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          
-          <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="200">
-            <i class="fas fa-database text-4xl text-[#6366F1] mb-4"></i>
-            <h3 class="text-2xl font-semibold mb-2">Data Pipeline Development (ETL/ELT)</h3>
-            <p>Designing and implementing automated pipelines to extract, transform, and load data from various sources.</p>
-          </div>
-          
-          <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in">
-            <i class="fas fa-cogs text-4xl text-[#4CAF50] mb-4"></i>
-            <h3 class="text-2xl font-semibold mb-2">Big Data Processing</h3>
-            <p>Using tools like Spark, Kafka, and Hadoop to process real-time (streaming) and batch data.</p>
-          </div>
+  <!-- Experience -->
+  <section class="bg-gray-100 dark:bg-black py-20" id="experience">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-[#2196F3] mb-12">Experience</h2>
 
-          <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="400">
-            <i class="fas fa-cloud text-4xl text-[#2196F3] mb-4"></i>
-            <h3 class="text-2xl font-semibold mb-2">Cloud Data Solutions</h3>
-            <p>Building and managing data systems on the cloud (especially Azure) using services like ADF, Event Hub, and Storage.</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow" data-aos="fade-up">
+          <h3 class="text-xl font-semibold">Data Engineering Trainee — DEPI</h3>
+          <p class="text-gray-500">Digital Egypt Pioneers Initiative | 2024 – 2025</p>
+          <ul class="text-sm mt-3 text-gray-400 text-left list-disc ml-5">
+            <li>Designed and implemented automated ETL/ELT pipelines for multi-source data ingestion.</li>
+            <li>Built data processing jobs using PySpark and scheduled workflows with Airflow.</li>
+            <li>Implemented streaming pipelines using Kafka and Azure Event Hub; visualized results in Power BI.</li>
+          </ul>
+        </div>
+
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="150">
+          <h3 class="text-xl font-semibold">Freelance Data Projects</h3>
+          <p class="text-gray-500">Freelance & Academic Projects | 2023 – Present</p>
+          <ul class="text-sm mt-3 text-gray-400 text-left list-disc ml-5">
+            <li>Data cleaning and exploratory analysis projects using Pandas and visualization libraries.</li>
+            <li>Implemented a data warehouse prototype (Bronze/Silver/Gold) and ETL scripts in SQL Server.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-100 dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-[#2196F3] mb-12">Technical Skills</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow w-full text-center">
+          <h4 class="font-semibold mb-3">Languages & Libraries</h4>
+          <div class="flex flex-wrap gap-2 justify-center">
+            <span class="skill-box">Python</span>
+            <span class="skill-box">Pandas</span>
+            <span class="skill-box">scikit-learn</span>
+            <span class="skill-box">TensorFlow</span>
+          </div>
+        </div>
+
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow w-full text-center">
+          <h4 class="font-semibold mb-3">Data & Big Data</h4>
+          <div class="flex flex-wrap gap-2 justify-center">
+            <span class="skill-box">SQL</span>
+            <span class="skill-box">Spark</span>
+            <span class="skill-box">Hadoop</span>
+            <span class="skill-box">Kafka</span>
+          </div>
+        </div>
+
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow w-full text-center">
+          <h4 class="font-semibold mb-3">Cloud & Tools</h4>
+          <div class="flex flex-wrap gap-2 justify-center">
+            <span class="skill-box">Azure</span>
+            <span class="skill-box">Airflow</span>
+            <span class="skill-box">Power BI</span>
+            <span class="skill-box">Git</span>
+          </div>
+        </div>
+
+        <div class="p-4 bg-white dark:bg-gray-800 rounded-xl shadow w-full text-center">
+          <h4 class="font-semibold mb-3">Engineering Practices</h4>
+          <div class="flex flex-wrap gap-2 justify-center">
+            <span class="skill-box">ETL/ELT</span>
+            <span class="skill-box">Data Modeling</span>
+            <span class="skill-box">Testing</span>
+            <span class="skill-box">CI/CD</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 <section class="bg-gray-100 dark:bg-gray-800 py-20 px-6" id="projects">
   <div class="max-w-6xl mx-auto">
@@ -192,10 +283,7 @@
         <h3 class="text-xl font-semibold mb-2">Smart Radar Traffic Monitoring System</h3>
         <p class="text-sm text-gray-500 mb-3">DEPI Graduation Project (Kafka, PySpark, Azure, Power BI)</p>
         <div class="flex justify-center gap-4">
-          <a href="https://github.com/yossefabdelkarem9/Smart-Radar-Traffic-Monitoring-System" target="_blank" 
-             class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">
-             View Repository
-          </a>
+          <a href="https://github.com/yossefabdelkarem9/Smart-Radar-Traffic-Monitoring-System" target="_blank" class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">View Repository</a>
         </div>
       </div>
 
@@ -204,10 +292,7 @@
         <h3 class="text-xl font-semibold mb-2">Data Warehouse (ETL) Project</h3>
         <p class="text-sm text-gray-500 mb-3">CRM & ERP Simulation using SQL Server (Bronze/Silver/Gold)</p>
         <div class="flex justify-center gap-4">
-          <a href="https://github.com/yossefabdelkarem9/DataWarehouse-CRM-ETL" target="_blank" 
-             class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">
-             View Repository
-          </a>
+          <a href="https://github.com/yossefabdelkarem9/DataWarehouse-CRM-ETL" target="_blank" class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">View Repository</a>
         </div>
       </div>
 
@@ -216,10 +301,7 @@
         <h3 class="text-xl font-semibold mb-2">NYC High School SAT Analysis</h3>
          <p class="text-sm text-gray-500 mb-3">Data Analysis (Pandas, Data Cleaning, Visualization)</p>
         <div class="flex justify-center gap-4">
-           <a href="https://github.com/yossefabdelkarem9/NYC-High-School-SAT-Analysis" target="_blank" 
-             class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">
-             View Repository
-          </a>
+           <a href="https://github.com/yossefabdelkarem9/NYC-High-School-SAT-Analysis" target="_blank" class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">View Repository</a>
         </div>
       </div>
 
@@ -228,10 +310,7 @@
         <h3 class="text-xl font-semibold mb-2">Netflix 1990s Movie Analysis</h3>
          <p class="text-sm text-gray-500 mb-3">Data Analysis (Data Wrangling, Filtering, Statistics)</p>
         <div class="flex justify-center gap-4">
-          <a href="https://github.com/yossefabdelkarem9/Intermediate-Python-Project" target="_blank" 
-             class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">
-             View Repository
-          </a>
+          <a href="https://github.com/yossefabdelkarem9/Intermediate-Python-Project" target="_blank" class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">View Repository</a>
         </div>
       </div>
 
@@ -240,11 +319,10 @@
 </section>
 
 
-
     <section id="contact" class="container mx-auto px-6 py-20 text-center">
       <h2 class="text-4xl font-bold text-[#2196F3] dark:text-[#38bdf8] mb-6" data-aos="fade-up">Let's Build Something Great</h2>
       <p class="max-w-lg mx-auto mb-8" data-aos="fade-up" data-aos-delay="200">I'm currently available for summer internships, freelance projects, and Junior Data Engineer opportunities. Have a project or opportunity? Let's talk.</p>
-      <a href="mailto:yossefabdelkarem9@gmail.com" class="bg-[#FFC107] text-black px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-transform hover:scale-105 inline-block" data-aos="zoom-in">Get In Touch</a>
+      <a href="mailto:yossefabdelkarem9@gmail.com" class="bg-[#FFC107] text-black px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-transform hover:scale-105 inline-block" data-aos="zoom-in">Hire Me</a>
     </section>
   </main>
 
@@ -253,23 +331,24 @@
   </footer>
   
   <script>
+    // Theme toggle behavior and initial icon state
     const toggle = document.getElementById('theme-toggle');
     const icon = document.getElementById('theme-icon');
 
-    toggle.addEventListener('click', () => {
-      // Toggle the 'dark' class on the <html> element
-      document.documentElement.classList.toggle('dark'); 
-      
-      // Check if dark mode is *now* active
+    function updateThemeIcon() {
       if (document.documentElement.classList.contains('dark')) {
-        // If dark, show sun icon
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
+        icon.className = 'fas fa-sun';
       } else {
-        // If light, show moon icon
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
+        icon.className = 'fas fa-moon';
       }
+    }
+
+    // Set initial state on page load
+    updateThemeIcon();
+
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark'); 
+      updateThemeIcon();
     });
   </script>
   
@@ -279,10 +358,7 @@
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+    AOS.init({ duration: 1000, once: true, });
   </script>
   
   <script>
@@ -317,6 +393,3 @@ navLinks.forEach(link => {
 </body>
 
 </html>
-
-
-
